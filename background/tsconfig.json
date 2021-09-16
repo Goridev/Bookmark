@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "module":"CommonJS",
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "../app/build",
+    "resolveJsonModule": true,
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "typeRoots": [
+      "../app/src/types",
+      "node_modules/@types"
+    ]
+  },
+  "include": ["src"]
+}

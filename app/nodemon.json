@@ -1,0 +1,12 @@
+{ 
+    "ignore": [
+        "node_modules"
+    ],
+    "watch": [
+        "public",
+        "src",
+        "../background"
+    ],      
+    "exec": "npm run build && npm run background && npm run sass",
+    "ext":"json,tsx,ts,scss"
+}

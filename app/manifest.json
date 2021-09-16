@@ -1,0 +1,47 @@
+{
+    "manifest_version": 3,
+    "name": "iBookmark",
+    "description": "Custom Extension Favorites",
+    "version": "1.0.1",
+    "host_permissions":[
+        "https://www.google.be/",
+        "*://*/*"
+    ],
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "commands",
+        "bookmarks",
+        "browsingData",
+        "clipboardRead",
+        "clipboardWrite",
+        "contextMenus",
+        "webRequest",
+        "webNavigation",
+        "notifications",
+        "storage",
+        "scripting",
+        "sessions",
+        "enterprise"
+    ],
+    "action":{
+        "default_icon" : "frame1.png",
+        "default_popup": "index.html",
+        "default_title": "Ajouter un widget de favoris"
+    },
+    "background":{
+        "service_worker":"background.js"
+    },
+    "icons": {
+        "128" : "frame1.png"
+    },
+    "commands": {
+        "add-bookmark": {
+            "suggested_key": {
+                "default":"Ctrl+B",
+                "mac":"Command+B"
+            },
+            "description": "Add to bookmark"
+        }
+    }
+}
